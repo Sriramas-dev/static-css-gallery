@@ -20,3 +20,12 @@ The sidebar navigation and UI elements are purely visual — buttons and links a
 >CSS3 for styling and layout
 
 >No JavaScript / No responsiveness
+
+
+
+## Website Preview
+
+
+![Website Preview](Screenshot%202025-08-14%20204110.png)
+
+
