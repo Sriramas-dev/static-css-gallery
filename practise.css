@@ -1,0 +1,122 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+.main_box{
+  background-image:url(photo.jpg);
+  height:100vh;
+  background-size:cover;
+ }
+ .btn_one i{
+  color:white;
+  font-weight:700;
+  font-size:27px;
+  position:absolute;
+  left:10px;
+  line-height:60px;
+  z-index: 1;
+  cursor:pointer;
+  transition:all 0.3s ease;
+ }
+ .sidebar_menu{
+  position:fixed;
+  left:-350px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width:300px;
+  height:100vh;
+  box-shadow:0 0 10px rgb(84, 83, 83);
+  border-radius:0px 10px 10px 0px;
+  transition:all 0.3s linear;
+
+ }
+ .sidebar_menu .logo {
+  width:100%;
+  position:absolute;
+  line-height:50px;
+   box-shadow:0 0 10px rgb(84, 83, 83);
+ }
+ .sidebar_menu .logo a {
+  /* color:white; */
+  font-size: 30px;
+  font-weight: 500; /* font-weight does not use 'px' */
+  text-decoration: none;
+  position: absolute;
+  left: 45px;
+  /* CORRECTED: This makes the 'left' property animate smoothly */
+  /* transition: left 0.3s linear;  */
+}
+ #check{
+  display:none;
+ }
+ .btn_two i{
+  color:grey;
+  font-weight:700;
+  font-size:25px;
+  position:absolute;
+  left:275px;
+  line-height:65px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+ }
+ .sidebar_menu .menu{
+  position:absolute;
+  width:100%;
+  top:80px;
+  
+ } 
+ .sidebar_menu .menu li{
+  margin-top:6px;
+  padding:14px 20px;
+    border-radius: 0px;
+ }
+.sidebar_menu .menu li i,a{
+  color:white;
+  padding:5px;
+  text-decoration:none;
+  font-size:20px;
+}
+.social_media {
+position:absolute;
+bottom: 100px;
+left:15%;
+
+}
+.social_media i{
+color:white;
+opacity:0.4;
+padding:5px;
+font-size:20px;
+ transition:all 0.3s ease;
+}
+
+.btn_one i:hover{
+  font-size:32px;
+}
+.btn_two i:hover{
+  font-size:30px;
+}
+.sidebar_menu .menu li:hover{
+   box-shadow:0 0 10px rgb(84, 83, 83);
+   border-radius: 15px;
+   font-size:25px;
+}
+.social_media i:hover{
+  opacity: 1;
+  font-size:25px;
+}
+#check:checked ~ .sidebar_menu{
+  left:0;
+}
+#check:checked ~ .btn_one{
+  opacity:0;
+  left:5px;
+}
+/* ADD THIS: This rule moves the logo text when the checkbox is checked */
+#check:checked ~ .sidebar_menu .logo a {
+  left: 5px; /* The new position for the text after sliding in */
+}
+/
